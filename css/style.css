@@ -167,12 +167,18 @@ a:hover { color: #036; }
  *
  * Author: 
  */
+header{}
+    .menu{ max-width: 1200px; margin: 20px auto }
+footer{}
 
 
 
 #container{ max-width: 1200px; margin: 0 auto }
 #main,#sidebar{ float: left }
 #main{width: 80% }
+
+
+
 #sidebar{ width: 20% }
 
 
