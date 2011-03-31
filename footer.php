@@ -1,3 +1,4 @@
+</div><!-- #container-->
 <footer>Footer</footer>
 <!-- JavaScript at the bottom for fast page loading -->
 

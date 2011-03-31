@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div id="container" class="clearfix"><!-- ends in footer.php -->
 <div id="main">
  <!-- Start the Loop. -->
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
