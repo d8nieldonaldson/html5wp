@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="main">
  <!-- Start the Loop. -->
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -36,6 +36,7 @@
 
  <!-- REALLY stop The Loop. -->
  <?php endif; ?>
+ </div><!-- #main-->
 
 
 
