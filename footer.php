@@ -7,8 +7,8 @@
 
 
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>js/plugins.js"></script>
+  <script src="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>js/script.js"></script>
   <!-- end scripts-->
 
 

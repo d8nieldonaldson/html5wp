@@ -25,8 +25,8 @@
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
 
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
+<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>js/libs/modernizr-1.7.min.js"></script>
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
 <link type="text/css" rel="stylesheet" href="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>/css/style.css" media="screen" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -34,5 +34,11 @@
 <?php wp_head(); ?>
 </head>
 <header>
-<?php  wp_nav_menu() ?>
+<?php
+if ( is_user_logged_in() ) {
+     wp_nav_menu( array( 'theme_location' => 'logged-in-menu' ) );
+} else {
+     wp_nav_menu( array( 'theme_location' => 'logged-out-menu' ) );
+}
+?>
 </header>
