@@ -30,8 +30,9 @@
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
+
 <link type="text/css" rel="stylesheet" href="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>/css/style.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>/css/less.css" media="screen" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
