@@ -27,6 +27,9 @@
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
 <script src="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>js/libs/modernizr-1.7.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
 <link type="text/css" rel="stylesheet" href="<?php echo trailingslashit( get_bloginfo('template_url') ); ?>/css/style.css" media="screen" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
